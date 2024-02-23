@@ -1,0 +1,127 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto:300);
+
+body {
+    font-family: "Roboto", sans-serif;
+    background-color: #f5f5f5; /* Change to a light background color */
+}
+
+.switch-field {
+    display: flex;
+    margin-bottom: 22px;
+    overflow: hidden;
+    justify-content: space-between;
+}
+
+.switch-field label {
+    background-color: #ffffff;
+    color: rgba(0, 0, 0, 1);
+    font-size: 14px;
+    line-height: 1;
+    text-align: center;
+    padding: 8px 16px;
+    margin-right: -1px;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    transition: all 0.1s ease-in-out;
+}
+
+.switch-field label:hover {
+    cursor: pointer;
+}
+
+.switch-field input:checked + label {
+    background-color: red;
+    color: white;
+    box-shadow: none;
+}
+
+.switch-field label:first-of-type {
+    border-radius: 4px 0 0 4px;
+}
+
+.switch-field label:last-of-type {
+    border-radius: 0 4px 4px 0;
+}
+
+.form {
+    background: rgba(0, 0, 0, 0.7);
+    max-width: 270px;
+    margin: 8px auto;
+    padding: 20px;
+    z-index: 2;
+    margin-top: 30px;
+    border-radius: 10px;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.9);
+}
+
+h2 {
+    font-size: 18px;
+    margin-bottom: 8px;
+    color: #fff; /* Change heading text color */
+}
+
+.area,
+.location,
+.submit {
+    outline: none;
+    background: #ffffff;
+    width: 95%;
+    border: none;
+    padding: 10px;
+    box-sizing: border-box;
+    font-size: 15px;
+    border-radius: 5px;
+    margin-bottom: 7px;
+}
+
+.submit {
+    background: red;
+    color: white;
+    width: 100%;
+    height: 40px;
+    cursor: pointer;
+}
+
+.submit:hover {
+    background: #ff3333; /* Lighten the hover color */
+}
+
+.result {
+    background: yellow;
+    width: 95%;
+    border: none;
+    border-radius: 5px;
+    margin: 25px 0 10px;
+    box-sizing: border-box;
+    font-size: 15px;
+    height: 35px;
+    text-align: center;
+    margin-top: 40px;
+    line-height: 35px;
+    color: black;
+    cursor: pointer;
+}
+
+.background {
+    color: #f2b715;
+    display: block;
+    font-size: 55px;
+    width: fit-content;
+    margin: 20px auto;
+    text-shadow: 0 0 10px #0e0e0e;
+    font-weight: bold;
+    -webkit-text-stroke-width: 3px;
+    -webkit-text-stroke-color: #000;
+}
+
+.img {
+    background: url('abc.webp');
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    opacity: 0.8;
+}
